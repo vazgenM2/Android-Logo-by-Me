@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	padding: 50px 0 0 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	background-color: #282C34;
+}
+
+.content {
+	background-color: #fff;
+	padding: 20px;
+	max-width: 400px;
+	height: 400px;
+	border: 5px solid #ddd;
+	border-radius: 10px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 22px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-decoration: underline;
+}
+
+.img {
+	width: 300px;
+}
+/* ================================== My Android Creating */
+.my-android {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.top {
+	height: 86px;
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+}
+.top::after, .top::before {
+	position: absolute;
+	content: '';
+	display: block;
+	height: 30px;
+	width: 5px;
+	background-color: #99CC00;
+	border-radius: 3px;
+	top: 5%;
+	left: 25%;
+	transform: translateX(-50%) rotate(-35deg);
+}
+.top::after {
+	transform: translateX(-50%) rotate(35deg);
+	left: 75%;
+}
+.head {
+	height: 65px;
+	width: 160px;
+	background-color: #99CC00;
+	border-top-left-radius: 100% 200%;
+	border-top-right-radius: 100% 200%;
+	position: relative;
+}
+.head::after, .head::before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background-color: #fff;
+	left: 30%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.head::after {
+	left: 70%;
+}
+
+
+.down {
+	height: 204px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.body-hands {
+	display: flex;
+	height: 143px;
+	width: 90%;
+	justify-content: space-evenly;
+}
+.hand {
+	background-color: #99CC00;
+	width: 30px;
+	height: 105px;
+	border-radius: 13px;
+}
+.body {
+	background-color: #99CC00;
+	height: 143px;
+	width: 160px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.legs {
+	width: 50%;
+	display: flex;
+	height: 55px;
+}
+
+.leg {
+	width: 30px;
+	margin-left: 30px;
+	height: 55px;
+	border-bottom-left-radius: 13px;
+	border-bottom-right-radius: 13px;
+	background-color: #99CC00;
+}
+
+@media (max-width: 820px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+	.content {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
